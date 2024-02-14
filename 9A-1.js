@@ -1,10 +1,10 @@
-function sequenceSum(beginI, endI, stepI) {
-  if (beginI > endI) return 0;
+function sequenceSum(b, e, s) {
+  if (b > e) return 0;
   let total = 0;
-  let current = beginI;
-  while (current <= endI) {
+  let current = b;
+  while (current <= e) {
     total += current;
-    current += stepI;
+    current += s;
   }
   return total;
 }

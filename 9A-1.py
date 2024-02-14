@@ -1,11 +1,11 @@
-def sequence_sum(beginning, ending, step):
-    if beginning > ending:
+def sequence_sum(b, e, s):
+    if b > e:
         return 0
     total = 0
-    current = beginning
-    while current <= ending:
+    current = b
+    while current <= e:
         total += current
-        current += step
+        current += s
     return total
 
 print(sequence_sum(2, 2, 2))  # Output: 2
